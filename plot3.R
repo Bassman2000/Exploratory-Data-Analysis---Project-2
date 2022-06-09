@@ -12,7 +12,7 @@ balt$year <- as.numeric(balt$year)
 #==============================================================
 plt <- ggplot(data = balt, aes(factor(year), Emissions)) +
   geom_bar(stat = 'identity') +
-  labs (title = 'PM2.5 Emissions For Baltimore by Source Type',
+  labs (title = expression('PM'[2.5]*' Emissions For Baltimore by Source Type'),
         y = 'Emissions', x = 'Year') +
   theme(axis.text.x = element_text(angle = -70))
 
